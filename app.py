@@ -40,12 +40,12 @@ def handle_message(event):
     print('請問想知道哪個停車場的資訊?')
     msg = event.message.text
     
-    if r == '雙十'
-
+    if msg == '雙十'
+        r = '雙十停車場的費率為平日半小時六十元\n 假日半小時八十元'
 
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=event.message.text))
+        TextSendMessage(text=r))
 
 
 if __name__ == "__main__":
